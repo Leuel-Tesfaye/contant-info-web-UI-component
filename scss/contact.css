@@ -1,0 +1,701 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+/* ----- text defaults ----- */
+body {
+  color: rgb(140, 140, 142);
+  font-size: 12px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  letter-spacing: 0.5px;
+  font-smooth: subpixel-antialiased;
+  background-color: rgb(34, 34, 34);
+}
+
+/* ----- title defaults ----- */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 700;
+  color: rgb(250, 250, 252);
+  margin-bottom: 0;
+  font-family: "Poppins", sans-serif;
+}
+
+h1 {
+  font-size: 52px;
+  font-weight: 800;
+}
+
+h4 {
+  font-size: 17px;
+  font-weight: 600;
+}
+
+h5 {
+  font-size: 14px;
+  font-weight: 600;
+}
+
+h6 {
+  font-size: 12px;
+  font-weight: 400;
+}
+
+/* ----- text config ----- */
+.art-sm-text {
+  font-size: 11px;
+}
+
+.art-lg-text {
+  font-size: 16px;
+}
+
+.art-white {
+  color: rgb(250, 250, 252);
+}
+
+.art-top-bg {
+  overflow: hidden;
+  position: absolute;
+  width: 100%;
+  top: 0;
+  background-position: center;
+  height: 400px;
+  background-size: cover;
+}
+
+.art-top-bg .art-top-bg-overlay {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  background-image: linear-gradient(180deg, rgba(30, 30, 40, 0.93) 0%, rgba(30, 30, 40, 0.96) 70%, rgba(30, 30, 40, 0.99) 80%, rgb(30, 30, 40) 100%);
+}
+
+/* art banner */
+.art-banner-back {
+  content: "";
+  position: absolute;
+  z-index: 0;
+  top: -30px;
+  width: 90%;
+  height: 30px;
+  margin-left: 5%;
+  box-shadow: 0 3px 8px 0 rgba(15, 15, 20, 0.2);
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+  background: rgba(30, 30, 40, 0.88);
+}
+
+.art-banner {
+  transition: 0.55s ease-in-out;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  box-shadow: 0 3px 8px 0 rgba(15, 15, 20, 0.2);
+  z-index: 999;
+}
+
+.art-banner .art-banner-overlay {
+  position: relative;
+  display: flex;
+  padding: 60px;
+  width: 100%;
+  background-image: linear-gradient(90deg, rgba(45, 45, 58, 0.9) 15%, rgba(45, 45, 58, 0.7) 50%, rgba(43, 43, 53, 0.7) 100%);
+}
+
+.art-banner .art-banner-overlay.art-side-overlay {
+  background-image: linear-gradient(90deg, rgba(45, 45, 58, 0.9) 15%, rgba(45, 45, 58, 0.7) 50%, rgba(43, 43, 53, 0) 100%);
+}
+
+.art-banner .art-banner-overlay .art-banner-title {
+  width: 100%;
+  align-self: center;
+}
+
+.art-banner .art-banner-overlay .art-banner-title h1 {
+  color: rgb(250, 250, 252);
+}
+
+.art-banner .art-banner-overlay .art-banner-photo {
+  width: 390px;
+  position: absolute;
+  right: 30px;
+  bottom: 0;
+}
+
+.mb-15 {
+  margin-bottom: 15px;
+}
+
+.mb-25 {
+  margin-bottom: 25px;
+}
+
+.art-btn {
+  text-transform: uppercase;
+  box-shadow: 0 1px 4px 0 rgba(15, 15, 20, 0.1);
+  color: rgb(32, 32, 42);
+  background: #FFC107;
+  letter-spacing: 1.5px;
+  font-weight: 600;
+  display: inline-flex;
+  justify-content: center;
+  align-content: center;
+  border: none;
+  transition: 0.4s ease-in-out;
+}
+
+.art-btn span {
+  align-self: center;
+  transition: 0.2s ease-in-out;
+}
+
+.art-btn.art-btn-md {
+  height: 45px;
+  font-size: 11px;
+  padding: 0 35px;
+}
+
+.art-btn.art-btn-sm {
+  height: 40px;
+  font-size: 11px;
+  padding: 0 30px;
+}
+
+.art-btn:hover {
+  transform: translateY(-2px);
+  color: rgb(30, 30, 40);
+}
+
+/* ------------------------------
+
+space
+
+------------------------------ */
+.p-30-0 {
+  padding-top: 30px;
+  padding-bottom: 0;
+}
+
+.p-0-30 {
+  padding-top: 0;
+  padding-bottom: 30px;
+}
+
+.p-30-30 {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.p-30-15 {
+  padding-top: 30px;
+  padding-bottom: 15px;
+}
+
+.p-15-15 {
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+.p-15-0 {
+  padding-top: 15px;
+  padding-bottom: 0;
+}
+
+.p-60-0 {
+  padding-top: 60px;
+  padding-bottom: 0;
+}
+
+.p-230-0 {
+  padding-top: 230px;
+  padding-bottom: 0;
+}
+
+.mb-10 {
+  margin-bottom: 10px;
+}
+
+.mb-15 {
+  margin-bottom: 15px;
+}
+
+.mb-25 {
+  margin-bottom: 25px;
+}
+
+.mb-30 {
+  margin-bottom: 25px;
+}
+
+@media (max-width: 1400px) {
+  .p-lg-30-0 {
+    padding-top: 30px;
+    padding-bottom: 0;
+  }
+}
+@media (max-width: 920px) {
+  .p-md-15-0 {
+    padding-top: 15px;
+    padding-bottom: 0;
+  }
+}
+.art-code {
+  min-height: 70px;
+  margin-bottom: 0;
+}
+
+.art-timeline .art-timeline-content {
+  margin-right: 30px;
+}
+
+.fancybox-container {
+  margin: 0;
+  width: 100vw;
+  height: 100vh;
+}
+
+.fancybox-toolbar {
+  width: 100vw;
+}
+
+.fancybox-navigation {
+  width: 100%;
+  position: absolute;
+  bottom: 35px;
+}
+
+/* ------------------------------
+
+content (after 768px)
+
+------------------------------ */
+@media (max-width: 768px) {
+  .art-section-title {
+    flex-direction: column;
+  }
+  .art-section-title .art-right-frame {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .art-grid.art-grid-2-col .art-grid-item {
+    width: 100%;
+  }
+  .art-grid.art-grid-3-col .art-grid-item {
+    width: 100%;
+  }
+  .art-filter {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+  }
+  .art-filter a {
+    margin: 0 0 10px;
+  }
+  .art-m-hidden {
+    display: none;
+  }
+}
+/* ------------------------------
+
+content (after 500px)
+
+------------------------------ */
+@media (max-width: 500px) {
+  .art-section-title {
+    flex-direction: column;
+  }
+  .art-section-title .art-right-frame {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .art-grid.art-grid-2-col .art-grid-item {
+    width: 100%;
+  }
+  .art-grid.art-grid-3-col .art-grid-item {
+    width: 100%;
+  }
+}
+/* ----- container ----- */
+.container-fluid {
+  overflow: hidden;
+  padding: 0 30px;
+  position: relative;
+}
+
+/* ----- buttons frame ----- */
+.art-buttons-frame a {
+  margin-right: 15px;
+}
+
+/* ----- text config ----- */
+.art-sm-text {
+  font-size: 10px;
+  color: white;
+}
+
+.art-lg-text {
+  font-size: 16px;
+  font-weight: medium;
+  color: white;
+  margin-left: 40px;
+}
+
+.art-white {
+  color: rgb(250, 250, 252);
+}
+
+.art-lg-text {
+  display: inline-block;
+  transform: rotate(1800deg);
+  transform-origin: left top 0;
+}
+
+.txt-rotate {
+  color: #f5de14;
+}
+
+/* ------------------------------
+
+link
+
+------------------------------ */
+.art-link {
+  position: relative;
+  text-transform: uppercase;
+  font-size: 10px;
+  display: inline-block;
+  letter-spacing: 1.5px;
+  font-weight: 600;
+  margin-right: 15px;
+  margin-bottom: 10px;
+  color: rgb(140, 140, 142);
+  transition: 0.4s ease-in-out;
+}
+
+.art-link:hover {
+  color: rgb(250, 250, 252);
+  text-shadow: 0 0 3px rgba(250, 250, 252, 0.4);
+}
+
+.art-link.art-white-link {
+  color: rgb(250, 250, 252);
+}
+
+.art-link.art-white-link:hover {
+  color: rgb(250, 250, 252);
+  text-shadow: 0 0 3px rgba(250, 250, 252, 0.4);
+  transform: translateX(5px);
+}
+
+.art-link.art-color-link {
+  color: #FFC107;
+}
+
+.art-link.art-color-link:hover {
+  color: #FFC107;
+  text-shadow: 0 0 3px rgba(250, 250, 252, 0.4);
+  transform: translateX(5px);
+}
+
+.art-link.art-w-chevron {
+  padding-right: 10px;
+}
+
+.art-link.art-w-chevron:after {
+  position: absolute;
+  font-family: "Font Awesome 5 free";
+  content: "\f054";
+  font-weight: 900;
+  display: inline-block;
+  font-style: normal;
+  font-variant: normal;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  font-size: 9px;
+  top: 0.3px;
+  transform: translateX(5px);
+  transition: 0.4s ease-in-out;
+}
+
+.art-link.art-w-chevron:hover {
+  transform: translateX(0);
+}
+
+.art-link.art-w-chevron:hover:after {
+  transform: translateX(10px);
+}
+
+.art-link:last-child {
+  margin-bottom: 0;
+  margin-right: 0;
+}
+
+.art-link i {
+  font-size: 9px;
+  margin-left: 3px;
+}
+
+.art-link.art-left-link {
+  padding-left: 10px;
+  padding-right: 0;
+}
+
+.art-link.art-left-link.art-w-chevron:after {
+  content: "\f053";
+  left: 0;
+  transform: translateX(0);
+}
+
+.art-link.art-left-link.art-w-chevron:hover:after {
+  transform: translateX(-5px);
+}
+
+/* ----- contact form ----- */
+.art-form-field input,
+.art-form-field textarea {
+  height: 50px;
+  width: 100%;
+  background: linear-gradient(159deg, rgb(37, 37, 50) 0%, rgb(35, 35, 45) 100%);
+  border: none;
+  color: rgb(250, 250, 252);
+  padding-left: 65px;
+  padding-right: 15px;
+  box-shadow: inset 0 1px 4px 0 rgba(15, 15, 20, 0.1);
+  margin-bottom: 0;
+  transition: 0.4s ease-in-out;
+}
+
+::-moz-placeholder {
+  color: rgb(100, 100, 102);
+}
+
+::placeholder {
+  color: rgb(100, 100, 102);
+}
+
+.art-form-field textarea {
+  padding-left: 15px;
+  padding-top: 15px;
+  height: 150px;
+  border-left: solid 50px rgb(32, 32, 42);
+}
+
+.art-form-field textarea.art-active {
+  border-color: #FFC107;
+}
+
+.art-form-field textarea:focus {
+  border-color: #FFC107;
+}
+
+.art-contact-form .art-input:focus {
+  outline: none;
+}
+
+.art-contact-form .art-input.art-active + label,
+.art-contact-form .art-input:focus + label {
+  background: #FFC107;
+  color: rgb(32, 32, 42);
+}
+
+.art-form-field {
+  position: relative;
+  margin-bottom: 30px;
+}
+
+.art-contact-form label {
+  text-align: center;
+  color: rgb(140, 140, 142);
+  position: absolute;
+  height: 50px;
+  width: 50px;
+  background: rgb(32, 32, 42);
+  top: 0;
+  left: 0;
+  padding: 0 15px;
+  text-transform: uppercase;
+  font-size: 11px;
+  line-height: 50px;
+  letter-spacing: 1px;
+  font-weight: 500;
+  transition: 0.4s ease-in-out;
+  cursor: text;
+}
+
+.art-submit-frame {
+  position: relative;
+  height: 45px;
+}
+
+.art-submit-frame .art-submit {
+  margin: 0;
+  overflow: hidden;
+  position: relative;
+  z-index: 999;
+}
+
+.art-submit-frame .art-submit:focus {
+  outline: inherit;
+}
+
+.art-submit-frame .art-success {
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin-top: -15px;
+  overflow: hidden;
+  max-width: 150px;
+  transform: scale(0);
+  text-transform: uppercase;
+  color: rgb(250, 250, 252);
+  background: rgb(32, 32, 42);
+  letter-spacing: 1.5px;
+  font-weight: 600;
+  justify-content: center;
+  align-content: center;
+  border: none;
+  height: 0;
+  font-size: 11px;
+  padding: 15px 35px 0;
+  margin: 0;
+}
+
+/* ----- brands ----- */
+.art-brand {
+  width: 120px;
+  height: 120px;
+  margin: 0 auto;
+  display: block;
+  margin-bottom: 30px;
+  opacity: 0.6;
+  transition: 0.4s ease-in-out;
+}
+
+.art-brand:hover {
+  opacity: 1;
+}
+
+/* ------------------------------
+
+content
+
+------------------------------ */
+/* ----- section title ----- */
+.art-section-title {
+  display: flex;
+  justify-content: space-between;
+}
+
+.art-section-title .art-title-frame {
+  align-self: center;
+  position: relative;
+  margin-bottom: 30px;
+}
+
+.art-section-title .art-right-frame {
+  padding-bottom: 30px;
+}
+
+.art-card {
+  background: linear-gradient(159deg, rgb(45, 45, 58) 0%, rgb(43, 43, 53) 100%);
+  box-shadow: 0 3px 8px 0 rgba(15, 15, 20, 0.2);
+  padding: 30px;
+  margin-bottom: 30px;
+}
+
+.art-card.art-fluid-card {
+  height: calc(100% - 30px);
+}
+
+/* ----- table ----- */
+.art-table {
+  color: rgb(140, 140, 142);
+}
+
+.art-table ul {
+  padding: 0;
+  margin: 0;
+}
+
+.art-table ul li {
+  list-style-type: none;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 5px;
+}
+
+.art-table ul li:last-child {
+  margin-bottom: 0;
+}
+
+/* ------------------------------
+
+transitions
+
+------------------------------ */
+.art-a {
+  transition: 0.55s ease-in-out;
+}
+
+/* ----- in animation ----- */
+.transition-fade {
+  transition: 0.55s ease-in-out;
+  opacity: 1;
+}
+
+.transition-fade .art-a {
+  transform: scale(1);
+  opacity: 1;
+}
+
+.transition-fade .art-price.art-popular-price {
+  transform: scale(1.03);
+}
+
+/* ----- out animation ----- */
+html.is-animating .transition-fade {
+  opacity: 0;
+}
+
+html.is-animating .transition-fade .art-a {
+  transform: scale(0.93);
+  opacity: 0;
+}
+
+html.is-animating .art-a, html.is-animating .art-current-page {
+  opacity: 0;
+}
+
+/* ----- in animation ----- */
+.fade-right {
+  transform: translateX(0);
+  opacity: 1;
+}
+
+/* ----- out animation ----- */
+html.is-animating .fade-right {
+  transform: translateX(-60px);
+  opacity: 0;
+}
+
+/* ----- in animation ----- */
+.fade-left {
+  transform: translateX(0);
+  opacity: 1;
+}
+
+/* ----- out animation ----- */
+html.is-animating .fade-left {
+  transform: translateX(60px);
+  opacity: 0;
+}
+
+@media (max-width: 920px) {
+  .transition-fade .art-price.art-popular-price {
+    transform: scale(1);
+  }
+} /*# sourceMappingURL=contact.css.map */
